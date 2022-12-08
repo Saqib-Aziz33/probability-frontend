@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    font-family: 'Lato', sans-serif !important;
+}
+body{
+    user-select: none;
+    #root{
+        overflow-x: hidden;
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif !important;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 0;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(117, 117, 117);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+    background-color: silver;
+}
+
+
+
+// ******************************* components *******************************
+.home-page{
+    display: flex;
+    height: 100vh;
+    min-height: 600px;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    overflow: hidden;
+
+    .random{
+        overflow: hidden;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to right,#00000041, #00000061), url('https://images.unsplash.com/photo-1602778050142-1dc1a9228837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') no-repeat center;
+        background-size: cover;
+        padding: 0.5rem;
+        transition: all 0.5s ease;
+        &:hover{
+            scale: 1.1;
+        }
+    }
+
+    .increment{
+        overflow: hidden;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(to left, #00000051, #00000061), url('https://images.unsplash.com/photo-1668868488723-c217b4f89465?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center;
+        background-size: cover;
+        padding: 0.5rem;
+        transition: all 0.5s ease;
+        &:hover{
+            scale: 1.1;
+        }
+    }
+}
+
+.random{
+    .table{
+        th, td{
+            padding: 0.5rem 0.8rem;
+            border: 1px solid #00000041;
+        }
+    }
+}
+
+
+.reward{
+
+    .money{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+
+
+// ******************************* overrides *******************************
+
+
+
+// ******************************* utils *******************************
